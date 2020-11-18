@@ -52,4 +52,4 @@ The default parameters are used:
 status-file is: "C:\Program Files\OpenVPN\log\openvpn-status.log"
 status-version is: 1
 
-![Image alt](Screenshots/Screenshot01.png)
+![Image alt](screenshots/Screenshot01.png)
