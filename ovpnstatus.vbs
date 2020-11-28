@@ -207,7 +207,11 @@ Function GetRowInfo2 (aRowNbr, aArray)
 			arrLine = Split(aArray(i), aDelim)
 			If arrLine(0) = SrchLineCL then
 				ReDim Preserve arrRow(k)
-				arrRow(k) = arrLine(aRowNbr) 
+				If aRowNbr = 4 AND len(arrLine(aRowNbr)) = 0 then
+					arrRow(k) = "N/A"
+				Else
+					arrRow(k) = arrLine(aRowNbr)
+				End If
 				k = k + 1 
 			End If
 		Next
